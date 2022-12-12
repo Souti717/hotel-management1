@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>user resigtration page</title>
+<head>
+    <style>
+        form {
+            background: rgb(244, 244, 244); width: 30%;height: 750px; margin: 100px 545px;border-radius: 15px;
+  }
+  input[type=text], input[type=password], input[type=date],input[type=email],input[type=tel],input[type=username] {
+    width: 60%;
+    padding: 5px 10px;
+    border-radius: 3px;
+    border-spacing: 20px;
+    margin: 5px 5px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  label{
+    width:100px;
+    display: inline-block;
+  }
+
+  
+  button {
+    background-color: #ffa500;
+    border-radius: 3px;
+    color: rgb(245, 247, 245);
+    padding: 14px 200px;
+    margin: 5px 5px;
+    border: 5px;
+    cursor:pointer;
+    width: 100%;
+  }
+  button:hover {
+    opacity: 0.8;background-color:rgba(255,165,0,.2); /* Green */
+  color: white; box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  .container {
+    padding: 12px 30px; width: 97%; height: 12%;
+    padding: 12px 20px;
+    border-radius: 5px;
+    margin: 5px 5px;
+    display: inline-block;
+   
+    box-sizing: border-box;
+  }
+  .container2 {padding: 3px 30px;
+    border-radius: 10px;  width: 97%; height: 65%; box-sizing: border-box;
+  }
+  .container3 {padding: 3px 20px; spacing: 12px;
+    border-radius: 5px;  margin: 5px 5px;
+    display: inline-block; width: 90%;
+  }
+    </style>
+    <script> function myFunction() {
+      var x = document.getElementById("myInput");
+      if (x.type === "password") {
+        x.type = "text";
+      } else {
+        x.type = "password";
+      }
+      document.getElementById("Form").reset();
+    }
+    // Function to check Whether both passwords
+            // is same or not.
+            function checkPassword(form) {
+                password1 = form.password.value;
+                password2 = form.confirmpassword.value;
+  
+                // If password not entered
+                if (password1 == '')
+                    alert ("Please enter Password");
+                      
+                // If confirm password not entered
+                else if (password2 == '')
+                    alert ("Please enter confirm password");
+                      
+                // If Not same return False.    
+                else if (password1 != password2) {
+                    alert ("\nPassword did not match: Please try again...")
+                    return false;
+                }
+  
+                // If same return True.
+                else{
+                    alert("Password Match: Welcome to BVP MANAGEMENT!")
+                    return true;
+                }
+            }
+
+</script>
+    <title>Document</title>
+</head>
+<body background="https://wallpaperaccess.com/full/1472948.jpg">
+    <form action="action_page.php" method="post">
+        <div class="container">
+            <center><h1 style="font-family:Franklin Gothic; "> BVP MANAGEMENT </h1></center>
+            <h3 style="font-family:Franklin Gothic; ">create new account</h3>
+            </div>
+          <div class="container2">
+            <label for="fname"><b> First Name-    </b></label>
+          <input type="text" placeholder="Enter your  firstsname" name="fname" required>
+          <br>
+          <label for="lname"><b> Last Name-   </b></label>
+          <input type="text" placeholder="Enter your lastname" name="lname" required>
+      <br><br>
+      <label for="date of birth"><b> D.O.B-</b></label>
+          <input type="date" placeholder="DD/MM/YYYY" name="date of birth" required>
+      <br><br>
+          <label for="EMAIL-"><b>EMAIL-</b></label>
+          <input type="email" placeholder="abc@gmail.com" name="email" required>
+      <br><br>
+      <label for="phone"><b> Phone number:</b></label>
+      <input type="tel" placeholder="enter number with std code" id="phone" name="phone"  maxlength="13" >
+      <br><br>
+      <label for="Username"><b>create a username-</b></label>
+      <input type="username"  name="username" required>
+      <br>
+      <label for="password"> <b> Password: </b></label>
+    <input type="password" placeholder="use combination of digts,aphabets and symbols" id="myInput" required>
+      <br>
+      <input type="checkbox" onclick="myFunction()">Show Password          
+      <br><br>
+      <label for="password-"><b>confirm password-</b></label>
+      <input type="password" placeholder="confirm your password" id="password" name="password" required></input>
+          <br>
+          <input type="reset">
+          </div>
+         
+          <label>  
+          
+            <div class="container2">
+           <button style="font-size:13px;"> Create account</a></button> 
+           <hr>
+        </div>
+      </form>   
+</body>
+</html>

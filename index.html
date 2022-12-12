@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>complete responsive hotel agency website design</title>
+        <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+       <!-- font awesome cnd link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+        <!--custom cs file link-->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body> 
+        <!--header selection start-->
+        <header>
+
+            <div id="menu-bar" class="fas fa-bars"></div>
+
+            <a href="#" class="logo"><span>B</span>VP Management</a>
+            <nav class="navbar">
+                <a href="#home">home</a>
+                <a href="#book">book</a>
+                <a href="#packages">packages</a>
+                <a href="#review">Tourist Guide</a>
+                <a href="#contact">contact</a>
+            </nav>
+            <div class="icons">
+                <i class="fas fa-search" id="search-btn"></i>
+                <i class="fas fa-user" id="login-btn"></i>
+            </div>
+
+            <from action="" class="search-bar-container">
+                <input type="search" id="search-bar" placeholder="search here...">
+                <label for="search-bar" class="fas fa-search"></label>
+        </header>
+
+    <!--header section ends-->
+
+    <!--login form container-->
+
+    <div class="login-form-container">
+        <i class="fas fa-times" id="form-close"></i>
+        <form action="">
+            <h3>login</h3>
+            <input type="email" class="box" placeholder="Enter your email">
+            <input type="password" class="box" placeholder="Enter your password">
+            <input type="submit" value="login now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember"> Remember my login info</label>
+            <p>Forgot Password?<a href="forgot.html">Click here</a></p>
+            <p>Don't have an account?<a href="register.html">Register Now</a></p>
+            <p><a href="staff.html">Click here</a> for Staff Login</p>
+            </form>
+    </div>
+
+    <!--login container ends-->
+
+    <!--home section starts-->
+     <section class="home" id="home">
+        <div class="content">
+            <h3>Welcome to a Global Icon of Luxury</h3>
+            <p>discover new places with us, luxury awaits</p>
+            <a href="#" class="btn">discover more</a>
+        </div>
+        
+        
+        <div class="controls">
+            <span class="vid-btn active" data-src = "img/vid-1.mp4"></span>
+            <span class="vid-btn" data-src = "img/vid-2.mp4"></span>
+            <span class="vid-btn" data-src = "img/vid-3.mp4"></span>
+            <span class="vid-btn" data-src = "img/vid-4.mp4"></span>
+        </div>
+
+        <div class="video-container">
+            <video src="img/vid-1.mp4" id="video-slider" loop autoplay muted></video>        
+        </div>
+    </section>
+
+<!--home section ends-->
+
+<!--booking section starts-->
+<section class="book" id="book">
+    <h1 class="heading">
+        <span>b</span>
+        <span>o</span>
+        <span>o</span>
+        <span>k</span>
+        <span class="space"></span>
+        <span>n</span>
+        <span>o</span>
+        <span>w</span>
+    </h1>
+
+    <div class="row">
+        <div class="img">
+            <img src="booking.png" alt="">
+        </div>
+        <form action="">
+            
+            <div class="inputBox">
+                <h3>How many</h3>
+                <input type="number" placeholder="Number Of Guests">
+                </div>
+                <div class="inputBox">
+                    <h3>Arrivals</h3>
+                    <input type="date">
+                    </div>
+                    <div class="inputBox">
+                        <h3>Leaving</h3>
+                        <input type="date">
+                    </div>
+                    <input type="submit" class="btn" value="book now">
+        </form>
+    </div> 
+</section>
+<!--book section ends-->
+
+<!--packages section starts-->
+
+<section class="packages" id="packages">
+    <h1 class="heading">
+        <span>p</span>
+        <span>a</span>
+        <span>c</span>
+        <span>k</span>
+        <span>a</span>
+        <span>g</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="img\single bed room.avif" alt="">
+            <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i>Single Bed Room</h3>
+            <p></p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <div class="price">₹1500/night<span>₹2000/night</span></div>
+            <a href="#" class="btn">Book Now</a>
+    </div> 
+</div>
+<div class="box">
+    <img src="img\double-bedroom.jpg" alt="">
+    <div class="content">
+    <h3><i class="fas fa-map-marker-alt"></i>Double Bed Room</h3>
+    <p></p>
+    <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+    </div>
+    <div class="price">₹1900/night<span>₹2300/night</span></div>
+    <a href="#" class="btn">Book Now</a>
+</div> 
+</div>
+<div class="box">
+    <img src="img\double bed deluxe.jpg" alt="">
+    <div class="content">
+    <h3><i class="fas fa-map-marker-alt"></i>Double Bed Deluxe Room</h3>
+    <p></p>
+    <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+    </div>
+    <div class="price">₹3300/night<span>₹3800/night</span></div>
+    <a href="#" class="btn">Book Now</a>
+</div> 
+</div>
+<div class="box">
+    <img src="family room.jpg" alt="">
+    <div class="content">
+    <h3><i class="fas fa-map-marker-alt"></i>Family Room</h3>
+    <p></p>
+    <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+    </div>
+    <div class="price">₹3500/night<span>₹4000/night</span></div>
+    <a href="#" class="btn">Book Now</a>
+</div> 
+</div>
+<div class="box">
+    <img src="img\buisness.jpg" alt="">
+    <div class="content">
+    <h3><i class="fas fa-map-marker-alt"></i>Buisness Class</h3>
+    <p></p>
+    <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+    </div>
+    <div class="price">₹4000/night<span>₹4500/night</span></div>
+    <a href="#" class="btn">Book Now</a>
+</div> 
+</div>
+</section>
+<!--review section starts-->
+<section class="review" id="review">
+    <h1 class="heading">
+        <span>T</span>
+        <span>o</span>
+        <span>u</span>
+        <span>r</span>
+        <span>i</span>
+        <span>s</span>
+        <span>t</span>
+        <span class="space"></span>
+        <span>g</span>
+        <span>u</span>
+        <span>i</span>
+        <span>d</span>
+        <span>e</span>
+    </h1>
+    <div class="swiper mySwiper review-slider">
+        <div class="swiper-wrapper wrapper">
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="img\WhatsApp Image 2022-11-30 at 11.17.04 PM.jpeg" alt="">
+                    <h1>Vaishnavi N. Gothankar</h1>
+                    <p>
+                        intro
+                        experience
+                    </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="img\WhatsApp Image 2022-11-16 at 8.46.33 AM.jpeg" alt="">
+                    <h1>Anoop G. Khude</h1>
+                    <p>
+                        intro
+                        experience
+                    </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="img\WhatsApp Image 2022-10-25 at 11.53.07 AM.jpeg" alt="">
+                    <h1>Ayushmann Prakash</h1>
+                    <p>
+                        intro
+                        experience
+                    </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="img\d1.jpg" alt="">
+                    <h1>Souti S. Samanta</h1>
+                    <p>
+                        intro
+                        experience
+                    </p>
+                    <div class="stars"> 
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--tourist guide section ends-->
+
+<!--contact section starts-->
+
+<section class="contact" id="contact">
+    <h1 class="heading">
+        <span>S</span>
+        <span>U</span>
+        <span>G</span>
+        <span>G</span>
+        <span>E</span>
+        <span>S</span>
+        <span>T</span>
+        <span>I</span>
+        <span>O</span>
+        <span>N</span>
+        <span>S</span>
+    </h1>
+    <div class="row">
+    <div class="img">
+        <img src="img/contact.png" alt="">
+    </div>
+    <form action="">
+    <div class="inputBox">
+      NAME:  <input type="text" placeholder="name">
+       EMAIL: <input type="email" placeholder="email">
+    </div>
+    <br>
+    <div class="inputBox"> 
+        NUMBER: <input type="number" placeholder="number">
+        SUBJECT: <input type="text" placeholder="subject">
+    </div>
+    <textarea placeholder="message" name="" cols="30" rows="10"></textarea>
+    <input type="submit" class="btn" value="send message">
+    </form>
+    </div>  
+</section>
+
+<!--contact section ends-->
+
+<!--footer section starts-->
+
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>about us</h3>
+            <p>
+                Welcome to Global icon of luxury.<br>
+                Discover New Places with us,Where your Luxury Awaits.
+            </p>
+        </div>
+        
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#">home</a>
+            <a href="#">booking</a>
+            <a href="#">packages</a>
+            <a href="#">tourist guide</a>
+            <a href="#">contact</a>
+        </div>
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twiter</a>
+            <a href="#">Likedin</a>
+        </div>
+    </div>
+    <h1 class="credit"> created by <span>BVP Management.</span> all rights reserved!</h1>
+
+</section>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+        <!--custome js file link-->
+        <script src="main.js"></script>
+    </body>
+</html>
